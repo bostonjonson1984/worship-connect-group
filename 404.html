@@ -1,0 +1,104 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Page not found | Worship Connect Group</title><meta name="description" content="That page could not be found."><meta name="robots" content="noindex,follow"><link rel="canonical" href="https://worshipconnectgroup.com/404/"><!-- Search-engine ownership verification (meta-tag method). Fill the token in
+         site.googleSiteVerification / site.bingSiteVerification once the property
+         is claimed (or use the DNS TXT method instead and leave these blank). --><!-- RSS autodiscovery for the resources/blog feed. --><link rel="alternate" type="application/rss+xml" title="Worship Connect Group — Resources" href="/rss.xml"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><meta name="theme-color" content="#0B0B0B"><link rel="preload" href="/fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin><!-- Open Graph / social --><meta property="og:type" content="website"><meta property="og:site_name" content="Worship Connect Group"><meta property="og:title" content="Page not found | Worship Connect Group"><meta property="og:description" content="That page could not be found."><meta property="og:url" content="https://worshipconnectgroup.com/404/"><meta property="og:image" content="/app-icon.png"><meta name="twitter:card" content="summary_large_image"><script>
+        // Set `reveal-ready` on <html> synchronously, BEFORE first paint, so the
+        // reveal-hidden state ONLY applies when JS is active and will manage it.
+        // Without JS (or if the observer never fires) content stays fully visible
+        // — no invisible below-fold content for no-JS users, SEO/snapshot tools,
+        // or non-scrolling captures. Also skip the hidden state under
+        // prefers-reduced-motion.
+        (function () {
+          try {
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+              document.documentElement.classList.add('reveal-ready');
+            }
+          } catch (e) {}
+        })();
+      </script><link rel="stylesheet" href="/_astro/PageView.C-X9aIo0.css"></head> <body class="theme-bff"> <a class="skip-link" href="#main">Skip to content</a>  <main id="main" style="min-height:60vh;display:grid;place-items:center;text-align:center;padding:2rem;"> <div> <h1>Page not found</h1> <p><a href="/">Back to the homepage</a></p> </div> </main>  <div id="consent-banner" class="consent" role="dialog" aria-label="Cookie consent" aria-live="polite" hidden data-astro-cid-u6s5b3h2> <p class="consent__msg" data-astro-cid-u6s5b3h2>We use cookies to understand how our site is used and to improve your experience. <a href="/privacy/" data-astro-cid-u6s5b3h2>Read our Privacy Policy</a>.</p> <div class="consent__btns" data-astro-cid-u6s5b3h2> <button type="button" class="consent__btn consent__btn--ghost" data-consent="denied" data-astro-cid-u6s5b3h2>Decline</button> <button type="button" class="consent__btn" data-consent="granted" data-astro-cid-u6s5b3h2>Accept</button> </div> </div> <script>
+  (function () {
+    var KEY = 'consent.v1';
+    var el = document.getElementById('consent-banner');
+    if (!el) return;
+    function apply(v) {
+      try { localStorage.setItem(KEY, v); } catch (e) {}
+      if (typeof window.gtag === 'function') {
+        try { window.gtag('consent', 'update', { analytics_storage: v === 'granted' ? 'granted' : 'denied' }); } catch (e) {}
+      }
+      try { window.dispatchEvent(new CustomEvent('consentchange', { detail: v })); } catch (e) {}
+    }
+    function dismiss() {
+      el.hidden = true;
+      el.style.display = 'none'; // belt-and-suspenders: never leave a dead overlay
+      try { document.body.classList.remove('consent-open'); } catch (e) {}
+    }
+    function choose(v) { apply(v); dismiss(); }
+    // Only "granted" / "denied" count as a real decision. Anything else (empty,
+    // whitespace, a stale/garbage value) is treated as undecided so the banner
+    // always shows and works rather than silently staying up but inert.
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    if (saved === 'granted' || saved === 'denied') { apply(saved); dismiss(); return; }
+    try { localStorage.removeItem(KEY); } catch (e) {}
+    el.hidden = false;
+    try { document.body.classList.add('consent-open'); } catch (e) {}
+
+    // ROBUST BINDING. A single capture-phase listener on the BANNER container.
+    // Capture phase + matching on data-consent means it fires even if some other
+    // script (e.g. a late-loading third party like HubSpot) calls
+    // stopPropagation in the bubble phase, and it survives the buttons being any
+    // descendant target. We handle pointerup AND click so a tap registers even if
+    // a synthetic click is swallowed. A short guard prevents a double-fire.
+    var acting = false;
+    function onChoose(e) {
+      var b = e.target && e.target.closest && e.target.closest('[data-consent]');
+      if (!b || el.hidden) return;
+      if (acting) return;
+      acting = true;
+      e.preventDefault();
+      choose(b.getAttribute('data-consent'));
+    }
+    el.addEventListener('click', onChoose, true);
+    el.addEventListener('pointerup', function (e) {
+      if (e.button && e.button !== 0) return; // primary pointer only
+      onChoose(e);
+    }, true);
+    // Keyboard: Enter/Space on a focused button.
+    el.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ' && e.key !== 'Spacebar') return;
+      var b = e.target && e.target.closest && e.target.closest('[data-consent]');
+      if (!b) return;
+      e.preventDefault();
+      if (acting) return; acting = true;
+      choose(b.getAttribute('data-consent'));
+    }, true);
+  })();
+</script> <script>
+        // Reveal utility. The scroll-fade entrance is reserved for elements the
+        // user actually scrolls to AFTER first paint. Everything already present
+        // at load (or reached before the user scrolls) is revealed INSTANTLY, so
+        // no element is ever caught mid-transition by a11y/snapshot tools and all
+        // content is solid for non-scrolling viewers. No libraries.
+        (function () {
+          var els = document.querySelectorAll('[data-reveal], [data-reveal-fade]');
+          if (!els.length) return;
+          var scrolled = false;
+          function showInstant(el) { el.classList.add('reveal-instant'); el.classList.add('in-view'); }
+          function showFade(el) { el.classList.add('in-view'); }
+          if (!('IntersectionObserver' in window)) { els.forEach(showInstant); return; }
+          window.addEventListener('scroll', function () { scrolled = true; }, { once: true, passive: true });
+          var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+              if (!e.isIntersecting) return;
+              // Fade only if the user has scrolled; otherwise reveal instantly.
+              if (scrolled) showFade(e.target); else showInstant(e.target);
+              io.unobserve(e.target);
+            });
+          }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+          els.forEach(function (el) { io.observe(el); });
+          // Final safety: anything still hidden a beat after load (e.g. below-fold,
+          // never scrolled to) is revealed instantly so it can never get stuck.
+          function sweep() { els.forEach(function (el) { if (!el.classList.contains('in-view')) showInstant(el); }); }
+          if (document.readyState === 'complete') setTimeout(sweep, 200);
+          else window.addEventListener('load', function () { setTimeout(sweep, 200); });
+        })();
+      </script> </body> </html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Worship Connect Group — Resources</title>
+    <link>https://worshipconnectgroup.com/resources/</link>
+    <atom:link href="https://worshipconnectgroup.com/rss.xml" rel="self" type="application/rss+xml" />
+    <description>Worship Connect Group helps churches build thriving worship ministries — vetted musician placement, team coaching, training through the Academy, and worship events.</description>
+    <language>en</language>
+    <item>
+      <title>How to Cover a Last-Minute Worship Gap Without the Panic</title>
+      <link>https://worshipconnectgroup.com/resources/2026-09-06-cover-a-last-minute-worship-gap/</link>
+      <guid isPermaLink="true">https://worshipconnectgroup.com/resources/2026-09-06-cover-a-last-minute-worship-gap/</guid>
+      <category>Sunday Staffing</category>
+      <pubDate>Sun, 06 Sep 2026 09:00:00 GMT</pubDate>
+      <description>Your drummer texts sick on Saturday night and Sunday is coming. Here is a calm, repeatable plan for who to call, how to keep the set simple, and how to build a bench so the next gap does not sink you.</description>
+    </item>
+  </channel>
+</rss>
